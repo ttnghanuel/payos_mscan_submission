@@ -1,0 +1,315 @@
+/* Reset Default Margin and Padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Apply Box-sizing Globally */
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Introduction Section Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .introduction {
+    background-image: url('./Assets/home-banner-background.png');
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center; /* Center the background image */
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  .Logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .mua-ngay {
+    background-color: white;
+    color: #2481EB;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mua-ngay:hover {
+    background-color: #2481EB;
+    color: white;
+  }
+  .nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-intro {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 1;
+    margin-top: 100px; /* Adjust this value to move the text below the logo and nav bar */
+    position: relative; /* Ensures it's positioned correctly */
+  }
+  
+  .intro-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+ /* Additional Sections Styles */
+.how-it-helps, .mscan-is-good, .partners, .contact {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .mscan-is-good {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text inside the paragraph is centered */
+    min-height: 68vh; /* Ensure the container has a minimum height */
+    background-image: url('./Assets/bgagain.png');
+    color: white;
+  }
+  .mscan-is-good p {
+    font-size: 40px;
+  }
+ 
+  .partners p{
+    color: #2481EB;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contact {
+    background-image: url('./Assets/home-banner-background.png');
+    color: white;
+  }
+  .heading{
+    font-weight: bold;
+  }
+  
+  .heading-how-it-helps {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2481EB;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-box {
+    width: 200px; /* Ensure the box is square */
+    height: 200px; /* Ensure the box is square */
+    background-color: white;
+    border: 1px solid #fffbfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .icon {
+    position: absolute; /* Position the icon absolutely */
+    top: -25px; /* Adjust the top position as needed */
+    left: 50%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Center the icon horizontally */
+    padding: 5px;
+  }
+  
+  .icon img {
+    width: 50px; /* Resize the icon */
+    height: 50px; /* Resize the icon */
+  }
+  
+  .feature-box p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .feature-box p:first-of-type {
+    margin-top: 50px; /* Add margin to create space for the icon */
+  }
+  
+  
+  
+  .brands {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts space between brand items */
+    gap: 20px; /* Adjust gap as needed */
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    width: 30%; /* Ensures three brands per line */
+    min-width: 300px; /* Ensures minimum width for each brand */
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .brand img {
+    width: 100px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the brand info */
+  }
+  
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .brand-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .fanpages {
+    font-size: 12px;
+    color: #666; /* Optional: Change the color to differentiate the fanpage count */
+  }
+  
+.contact {
+    width: calc(100% - 40px); /* Full width minus margins */
+    margin: 30px; /* Margin to the left and right */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: left; /* Align text to the left */
+    min-height: 300px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact p.cta {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Color for the call to action text */
+}
+
+.contact p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; /* Standard text color */
+}
+
+.contact-form {
+    display: flex;
+    margin-left: 550px;
+
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 14px;
+    width: 300px; /* Adjust width as needed */
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px; /* Rounded corners, only left side */
+    border: 1px solid #ccc; /* Border for the input */
+    outline: none; /* Remove outline on focus */
+}
+
+.email-input::placeholder {
+    color: #888; /* Customize placeholder color */
+    font-style: italic; /* Customize placeholder style */
+}
+
+.send-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: white; /* Button background color */
+    color: #2481EB;
+    border: none;
+    border-radius: 0 20px 20px 0; /* Rounded corners, only right side */
+    cursor: pointer;
+    margin-left: -5px; /* Negative margin to overlap with the input */
+    z-index: 1; /* Ensure the button is above the input */
+}
+
+.send-button:hover {
+    background-color: #2481EB;
+    color: white; /* Button hover effect */
+}
+.contact img {
+    position: absolute;
+    right: -0.5px; /* Adjust position to partially overlap the container */
+    width: 450px;
+    z-index: 1;
+    transform: translateY(-80%);
+
+
+    
+    
+}
+.footer{
+    width: 100%;
+    height: 300px;
+  background-image: url('./Assets/footer.png');
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+
+}
